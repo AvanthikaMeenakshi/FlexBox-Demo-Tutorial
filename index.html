@@ -1,0 +1,260 @@
+<html>
+<head>
+	<title>Flex</title>
+</head>
+<body>
+	<header>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/flex.css">
+		<nav class="navbar">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		        <a class="navbar-brand" href="#">Flexbox</a>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+		<div class="container">
+			<h1>What is a flex?</h1>
+			<p>Flex is used to create whole module or a block that can wrap elements into it. Positioning in vertical or horizontal stack is possible with flex. A flex's alignment is identified along the main axis and cross axis. Main axis is generally horizontal, but it can be made vertical by using flex-direction property. Flex is responsive and flexible by itself, and it aligns the flex items in the right position with respect to the other flex items in the flex. The grids below are flex items wrapped inside their flex-box or flex-container.</p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/f662fe5ed4b679e4e641.js"></script>
+			<p>A flex is defined with the display property. IE 10 and IE 11 offers partial support to flex when prefixed with -ms-. Android 4.3 provides partial support with -webkit- prefix. Edge, Safari, Chrome, Firefox, Opera and Android browsers above 4.3 provides support even to the recent updates of flex.</p>
+			
+				<ul class="Flex--Box list-unstyled">
+					<li class="Flex--Item"><span>1</span>
+					</li>
+					<li class="Flex--Item"><span>2</span>
+					</li>
+					<li class="Flex--Item"><span>3</span>
+					</li>
+					<li class="Flex--Item"><span>4</span>
+					</li>
+					<li class="Flex--Item"><span>5</span>
+					</li>
+					<li class="Flex--Item"><span>6</span>
+					</li>
+					<li class="Flex--Item"><span>7</span>
+					</li>
+					<li class="Flex--Item"><span>8</span>
+					</li>
+					<li class="Flex--Item"><span>9</span>
+					</li>
+					<li class="Flex--Item"><span>10</span>
+					</li>
+				</ul>
+			<p>Since flex is a block or whole space aligining proporty, it is supported by many other properties that works on the parent flex and the child flex-items.</p>
+			<ul class="list-unstyled Flex--Properties">
+				<li><ul class="Flex--List list-unstyled">
+					<h3>Flexbox Properties (Parent)</h3>
+					<li><a href="#Flex-direction">flex-direction</a></li>
+					<li><a href="#Flex-wrap">flex-wrap</a></li>
+					<li><a href="#Flex-flow">flex-flow</a></li>
+					<li><a href="#Justify-content">justify-content</a></li>
+					<li><a href="#Align-items">align-items</a></li>
+					<li><a href="">align-content</a></li>
+				</ul></li> 
+				<li><ul class="Flex--List list-unstyled">
+					<h3>Flexitems Properties (Child)</h3>
+					<li><a href="">flex-grow</a></li>
+					<li><a href="">order</a></li>
+					<li><a href="">flex-shrink</a></li>
+					<li><a href="">flex-basics</a></li>
+					<li><a href="">flex</a></li>
+					<li><a href="">align-self</a></li>
+				</ul></li>
+			</ul>
+			<h1>Flexbox Properties (Parent)</h1>
+			<p> The properties that are listed here are effective on the parent flexbox.</p>
+			<div id="Flex-direction">
+				<h3>flex-direction</h3>
+				<p>This is used to specify in which direction the main axis should fall. By default, <b>row</b> is set which can be replaced by any of the values below.</p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/f13fc161fbf73c00afe6.js"></script>
+				<p>On changing the value in flex-direction property, we can change the direction of the flex-box axis in the window. For instance, the snippet below inverses the direction of flex-items in the flex-box.</p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/272da2201388b593fed7.js"></script>				
+				<ul class="Flex--Box-Inverse list-unstyled">
+					<li class="Flex--Item"><span>1</span>
+					</li>
+					<li class="Flex--Item"><span>2</span>
+					</li>
+					<li class="Flex--Item"><span>3</span>
+					</li>
+					<li class="Flex--Item"><span>4</span>
+					</li>
+					<li class="Flex--Item"><span>5</span>
+					</li>
+				</ul>
+			</div>
+			<div id="Flex-wrap">
+				<h3>flex-wrap</h3>
+				<p>We make use of flex-wrap which is similar to the wrapping options in any text editor to wrap the contents of the flex-box in the next line. The flex-box auto adjusts the spacing and renders the flex-items in the next line. By default, we have the <b>nowrap</b> active, which doesn't wrap the flex-items of the flex-box.</p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/3ad2aafca294f0489d19.js"></script>
+				<p>The following is the flex-box with the flex-items that are already illustrated above. We have made use of nowrap here, and all the flex-items are arranged within the same flex-box.</p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/3ce3e171b105e4c1a9a4.js"></script>
+				<ul class="Flex--Box-wrap list-unstyled">
+					<li class="Flex--Item"><span>1</span>
+					</li>
+					<li class="Flex--Item"><span>2</span>
+					</li>
+					<li class="Flex--Item"><span>3</span>
+					</li>
+					<li class="Flex--Item"><span>4</span>
+					</li>
+					<li class="Flex--Item"><span>5</span>
+					</li>
+					<li class="Flex--Item"><span>6</span>
+					</li>
+					<li class="Flex--Item"><span>7</span>
+					</li>
+					<li class="Flex--Item"><span>8</span>
+					</li>
+					<li class="Flex--Item"><span>9</span>
+					</li>
+					<li class="Flex--Item"><span>10</span>
+					</li>
+				</ul>
+			</div>
+			<div id="Flex-flow">
+				<h3>Flex-flow</h3>
+				<p>Flex-flow is a combination of flex-direction and flex-wrap. </p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/33a8b1afd345ffb4d78f.js"></script>
+				<p>Other than specification of the two distict values to style the flex-box, we can make use of <b>initial</b> and <b>inherit</b> where initial sets the default value while inherit inherits from the parent flex-box.</p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/3dee9b7c50f9ccb267de.js"></script>
+				<ul class="Flex--Box-flow list-unstyled">
+					<li class="Flex--Item"><span>1</span>
+					</li>
+					<li class="Flex--Item"><span>2</span>
+					</li>
+					<li class="Flex--Item"><span>3</span>
+					</li>
+					<li class="Flex--Item"><span>4</span>
+					</li>
+					<li class="Flex--Item"><span>5</span>
+					</li>
+				</ul>
+			</div>
+			<div id="Justify-content">
+				<h3>justify-content</h3>
+				<p>This is used to align the flex-box contents along the main axis. This has five property values: <b>flex-start</b>, <b>flex-end</b>, <b>center</b>, <b>space-around</b> and <b>space-between</b>.</p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/3fbea85fffd5d329e9d9.js"></script>
+				<ol class="Flex--Values">
+					<li><b>flex-start:</b> Pushes flex-items to the starting of where the flex-box starts.</li>
+					<li><b>flex-end:</b> Aligns flex-items to the end where the flex-box ends.</li>
+					<li><b>center:</b> Adjusts the space to align the flex-items to the exact center of the flex-box.</li>
+					<li><b>space-around:</b> Adjusts space <i>around</i> the flex-items in the flex-box.</li>
+					<li><b>space-between:</b> Adjusts space <i>between</i> the flex-items in the flex-box.</li>
+				</ol>
+					<script src="https://gist.github.com/AvanthikaMeenakshi/90f2512e3f0c3b325cff.js"></script>
+					<p>flex-start</p>
+				<ul class="Flex--Box-justify-start list-unstyled">
+					<li class="Item--Small"><span>1</span>
+					</li>
+					<li class="Item--Small"><span>2</span>
+					</li>
+					<li class="Item--Small"><span>3</span>
+					</li>
+				</ul>
+					<p>flex-end</p>
+				<ul class="Flex--Box-justify-end list-unstyled">
+					<li class="Item--Small2"><span>1</span>
+					</li>
+					<li class="Item--Small2"><span>2</span>
+					</li>
+					<li class="Item--Small2"><span>3</span>
+					</li>
+				</ul>
+					<p>center</p>
+				<ul class="Flex--Box-justify-center list-unstyled">
+					<li class="Item--Small3"><span>1</span>
+					</li>
+					<li class="Item--Small3"><span>2</span>
+					</li>
+					<li class="Item--Small3"><span>3</span>
+					</li>
+				</ul>
+					<p>space-around</p>
+				<ul class="Flex--Box-justify-spacearound list-unstyled">
+					<li class="Item--Small4"><span>1</span>
+					</li>
+					<li class="Item--Small4"><span>2</span>
+					</li>
+					<li class="Item--Small4"><span>3</span>
+					</li>
+				</ul>
+					<p>space-between</p>
+				<ul class="Flex--Box-justify-spacebetween list-unstyled">
+					<li class="Item--Small5"><span>1</span>
+					</li>
+					<li class="Item--Small5"><span>2</span>
+					</li>
+					<li class="Item--Small5"><span>3</span>
+					</li>
+				</ul>
+			</div>
+			<div id="Align-items">
+				<h3>align-items</h3>
+				<p>Align-items is used to align the flex-items along the vertical or cross axis. This has five property values: <b>flex-start</b>, <b>flex-end</b>, <b>center</b>, <b>baseline</b> and <b>stretch</b>. </p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/b0b596c34dc2bfd61a78.js"></script>
+				<ol class="Flex--Values">
+					<li><b>flex-start:</b> Pushes flex-items to the starting of where the flex-box starts in the cross-axis.</li>
+					<li><b>flex-end:</b> Aligns flex-items to the end where the flex-box ends in the cross axis.</li>
+					<li><b>center:</b> Adjusts the space to align the flex-items to the exact center of the flex-box in the cross axis.</li>
+					<li><b>baseline:</b> Aligns the flex-items along the baseline of the flexbox.</li>
+					<li><b>stretch:</b> Stretches the flex-items along the cross axis.</li>
+				</ol>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/cbf589f603df581a6e6f.js"></script>
+				<p>flex-start</p>
+				<ul class="Flex--Box-align-start list-unstyled">
+					<li class="Item--Small"><span>1</span><br><span>2</span>
+					</li>
+					<li class="Item--Small"><span>3</span>
+					</li>
+					<li class="Item--Small"><span>4</span>
+					</li>
+				</ul>
+					<p>flex-end</p>
+				<ul class="Flex--Box-align-end list-unstyled">
+					<li class="Item--Small2"><span>1</span>
+					</li>
+					<li class="Item--Small2"><span>2</span>
+					</li>
+					<li class="Item--Small2"><span>3</span><br><span>4</span>
+					</li>
+				</ul>
+					<p>center</p>
+				<ul class="Flex--Box-align-center list-unstyled">
+					<li class="Item--Small3"><span>1</span>
+					</li>
+					<li class="Item--Small3"><span>2</span><br><span>3</span>
+					</li>
+					<li class="Item--Small3"><span>4</span>
+					</li>
+				</ul>
+					<p>baseline</p>
+				<ul class="Flex--Box-align-baseline list-unstyled">
+					<li class="Item--Small4"><span>1</span>
+					</li>
+					<li class="Item--Small4"><span>2</span><br><span>3</span>
+					</li>
+					<li class="Item--Small4"><span>4</span><br><span>5</span>
+					</li>
+				</ul>
+					<p>stretch</p>
+				<ul class="Flex--Box-align-stretch list-unstyled">
+					<li class="Item--Small5"><span>1</span><br><span>2</span>
+					</li>
+					<li class="Item--Small5"><span>3</span><br><span>4</span>
+					</li>
+					<li class="Item--Small5"><span>5</span>
+					</li>
+				</ul>
+			</div>
+			<div id="">
+			</div>
+		</div>
+
+	<footer>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</footer>
+</body>
+</html>
