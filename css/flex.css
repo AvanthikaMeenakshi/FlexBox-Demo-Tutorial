@@ -115,6 +115,66 @@ body{
 	align-items:stretch;
 }
 
+.Flex--Box-align-cstart{
+	display: flex;
+	float: left;
+	background-color: #FFF;
+	align-content:flex-start;
+	flex-flow:row wrap;
+	width: 120px;
+  height: 300px;
+}
+
+.Flex--Box-align-cend{
+	display: flex;
+	float: left;
+	background-color: #FFF;
+	align-content:flex-end;
+	flex-flow:row wrap;
+	width: 120px;
+  height: 300px;
+}
+
+.Flex--Box-align-ccenter{
+	display: flex;
+	float: left;
+	background-color: #FFF;
+	align-content:center;
+	flex-flow:row wrap;
+	width: 120px;
+  height: 300px;
+}
+
+.Flex--Box-align-cspacearound{
+	display: flex;
+	background-color: #FFF;
+	align-content:space-around;
+	float: left;
+	flex-flow:row wrap;
+	width: 120px;
+  height: 300px;
+}
+
+.Flex--Box-align-cspacebetween{
+	display: flex;
+	background-color: #FFF;
+	align-content:space-between;
+	float: left;
+	flex-flow:row wrap;
+	width: 120px;
+  height: 300px;
+}
+
+.Flex--Box-align-cstretch{
+	display: flex;
+	background-color: #FFF;
+	float: left;
+	align-content:stretch;
+	flex-flow:row wrap;
+	width: 120px;
+  height: 300px;
+}
+
 .Item--Small{
 	width: 250px;
 	background-color: #000;
@@ -162,6 +222,72 @@ body{
 .Item--Small5{
 	width: 250px;
 	background-color: #002663;
+	font-size: 15px;
+	color: #FFF;
+	margin: 10px;
+	line-height:50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Item--CSmall{
+	width: 50px;
+	background-color: #000;
+	font-size: 15px;
+	color: #FFF;
+	margin: 10px;
+	line-height:50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Item--CSmall2{
+	width: 50px;
+	background-color: #fd5c63;
+	font-size: 15px;
+	color: #FFF;
+	margin: 10px;
+	line-height:50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Item--CSmall3{
+	width: 50px;
+	background-color: #fbb034;
+	font-size: 15px;
+	color: #FFF;
+	margin: 10px;
+	line-height:50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Item--CSmall4{
+	width: 50px;
+	background-color: #49176d;
+	font-size: 15px;
+	color: #FFF;
+	margin: 10px;
+	line-height:50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Item--CSmall5{
+	width: 50px;
+	background-color: #002663;
+	font-size: 15px;
+	color: #FFF;
+	margin: 10px;
+	line-height:50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Item--CSmall6{
+	width: 50px;
+	background-color: #629aa9;
 	font-size: 15px;
 	color: #FFF;
 	margin: 10px;

@@ -42,19 +42,19 @@
 					<li class="Flex--Item"><span>10</span>
 					</li>
 				</ul>
-			<p>Since flex is a block or whole space aligining proporty, it is supported by many other properties that works on the parent flex and the child flex-items.</p>
+			<p>Since flex is a block or whole space aligining proporty, it is supported by many other sub-properties that works on the parent flex and the child flex-items.</p>
 			<ul class="list-unstyled Flex--Properties">
 				<li><ul class="Flex--List list-unstyled">
-					<h3>Flexbox Properties (Parent)</h3>
+					<h3>Flexbox Sub-properties (Parent)</h3>
 					<li><a href="#Flex-direction">flex-direction</a></li>
 					<li><a href="#Flex-wrap">flex-wrap</a></li>
 					<li><a href="#Flex-flow">flex-flow</a></li>
 					<li><a href="#Justify-content">justify-content</a></li>
 					<li><a href="#Align-items">align-items</a></li>
-					<li><a href="">align-content</a></li>
+					<li><a href="#align-content">align-content</a></li>
 				</ul></li> 
 				<li><ul class="Flex--List list-unstyled">
-					<h3>Flexitems Properties (Child)</h3>
+					<h3>Flexitems Sub-properties (Child)</h3>
 					<li><a href="">flex-grow</a></li>
 					<li><a href="">order</a></li>
 					<li><a href="">flex-shrink</a></li>
@@ -63,7 +63,7 @@
 					<li><a href="">align-self</a></li>
 				</ul></li>
 			</ul>
-			<h1>Flexbox Properties (Parent)</h1>
+			<h1>Flexbox Sub-Properties (Parent)</h1>
 			<p> The properties that are listed here are effective on the parent flexbox.</p>
 			<div id="Flex-direction">
 				<h3>flex-direction</h3>
@@ -114,7 +114,7 @@
 				</ul>
 			</div>
 			<div id="Flex-flow">
-				<h3>Flex-flow</h3>
+				<h3>flex-flow</h3>
 				<p>Flex-flow is a combination of flex-direction and flex-wrap. </p>
 				<script src="https://gist.github.com/AvanthikaMeenakshi/33a8b1afd345ffb4d78f.js"></script>
 				<p>Other than specification of the two distict values to style the flex-box, we can make use of <b>initial</b> and <b>inherit</b> where initial sets the default value while inherit inherits from the parent flex-box.</p>
@@ -248,7 +248,87 @@
 					</li>
 				</ul>
 			</div>
-			<div id="">
+			<div id="align-content">
+				<h3>align-content</h3>
+				<p>Align-items is used to align the flex-items along the vertical or cross axis. This has six property values: <b>flex-start</b>, <b>flex-end</b>, <b>center</b>, <b>space-around</b>, <b>space-between</b> and <b>stretch</b>. </p>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/1d050617119063edcf70.js"></script>
+				<ol class="Flex--Values">
+					<li><b>flex-start:</b> Pushes flex-containers content/lines to the starting of where the flex-box starts in the cross-axis.</li>
+					<li><b>flex-end:</b> Aligns flex-container lines/content to the end where the flex-box ends in the cross axis.</li>
+					<li><b>center:</b> Adjusts the space to align the flex-container content to the exact center of the flex-box in the cross axis.</li>
+					<li><b>space-between:</b> Makes space <i>between</i> the content/lines in the flex-container in the flex-box</li>
+					<li><b>space-around:</b> Makes space <i>around</i> the content/lines in the flex-container in the flex-box</li>
+					<li><b>stretch:</b> Stretches the flex-container content along the cross axis.</li>
+				</ol>
+				<script src="https://gist.github.com/AvanthikaMeenakshi/ae3a4fd55402f24609e8.js"></script>
+				
+				<ul class="Flex--Box-align-cstart list-unstyled">
+					<li class="Item--CSmall"><span>1</span>
+					</li>
+					<li class="Item--CSmall"><span>2</span>
+					</li>
+					<li class="Item--CSmall"><span>3</span>
+					</li>
+				</ul>
+					
+				<ul class="Flex--Box-align-cend list-unstyled">
+					<li class="Item--CSmall2"><span>1</span>
+					</li>
+					<li class="Item--CSmall2"><span>2</span>
+					</li>
+					<li class="Item--CSmall2"><span>3</span>
+					</li>
+				</ul>
+					
+				<ul class="Flex--Box-align-ccenter list-unstyled">
+					<li class="Item--CSmall3"><span>1</span>
+					</li>
+					<li class="Item--CSmall3"><span>2</span>
+					</li>
+					<li class="Item--CSmall3"><span>3</span>
+					</li>
+				</ul>
+					
+				<ul class="Flex--Box-align-cspacearound list-unstyled">
+					<li class="Item--CSmall4"><span>1</span>
+					</li>
+					<li class="Item--CSmall4"><span>2</span>
+					</li>
+					<li class="Item--CSmall4"><span>3</span>
+					</li>
+				</ul>
+					
+				<ul class="Flex--Box-align-cspacebetween list-unstyled">
+					<li class="Item--CSmall5"><span>1</span>
+					</li>
+					<li class="Item--CSmall5"><span>2</span>
+					</li>
+					<li class="Item--CSmall5"><span>3</span>
+					</li>
+				</ul>
+				
+				<ul class="Flex--Box-align-cstretch list-unstyled">
+					<li class="Item--CSmall6"><span>1</span></li>
+					<li class="Item--CSmall6"><span>2</span>
+					</li>
+					<li class="Item--CSmall6"><span>3</span>
+					</li>
+				</ul>
+
+				<ul class="Flex--Box-align-cstart list-unstyled">
+					<li class=""><span>flex-start</span>
+					</li>
+					<li class=""><span>flex-end</span>
+					</li>
+					<li class=""><span>center</span>
+					</li>
+					<li class=""><span>space-around</span>
+					</li>
+					<li class=""><span>space-between</span>
+					</li>
+					<li class=""><span>stretch</span>
+					</li>
+				</ul>
 			</div>
 		</div>
 
